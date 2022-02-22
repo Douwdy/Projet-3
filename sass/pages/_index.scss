@@ -8,6 +8,63 @@
     padding-top: 15px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
+.header-location{
+    background: #EAEAEA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    i{
+        margin-right: 5px;
+    }
+}
+.header-explore{
+    padding: 50px;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__btn{
+        color: white;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        width: 200px;
+        border-radius: 25px;
+        background: $color-primary;
+        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+    }
+}
+
+.header-guide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        border-radius: 25px;
+    }
+}
+
+#restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+        img{
+            height: 200px;
+        }
+    }
+}
 
 footer{
     color: white;

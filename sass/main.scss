@@ -1,13 +1,10 @@
-
-// Base Files
-@import "./base/base";
-@import "./base/typography";
-
-// Pages Files
-@import "./pages/index";
-@import "./pages/menu";
-
-// Utils Files
+// Utils
 @import "./utils/variable";
 @import "./utils/mixins";
 @import "./utils/functions";
+// Base
+@import "./base/base";
+@import "./base/typography";
+// Pages
+@import "./pages/index";
+@import "./pages/menu";

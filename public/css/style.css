@@ -2,14 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
-  color: black;
-}
-a:visited {
-  color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,6 +28,63 @@ p, a {
   padding: 10px;
   padding-top: 15px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-location {
+  background: #EAEAEA;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-location i {
+  margin-right: 5px;
+}
+
+.header-explore {
+  padding: 50px;
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-explore__btn {
+  color: white;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: 200px;
+  border-radius: 25px;
+  background: #9356DC;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+
+.header-guide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-guide__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 25px;
+}
+
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#restaurants div img {
+  height: 200px;
 }
 
 footer {
