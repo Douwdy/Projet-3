@@ -1,0 +1,36 @@
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 0px;
+    padding: 10px ;
+    padding-top: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    color: white;
+    background-color: rgb(58, 58, 58);
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    img{
+        height: 20px;
+    }
+    a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        &:visited{
+            color: white;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+}
