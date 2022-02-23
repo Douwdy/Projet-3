@@ -19,8 +19,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .header-logo {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: white;
   margin: 0px;
   padding: 10px;
@@ -31,9 +31,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 .header-location {
   background: #EAEAEA;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 .header-location i {
   margin-right: 5px;
@@ -43,34 +43,35 @@ h1, h2, h3, h4, h5, h6, p, a {
   padding: 50px;
   background: #F6F6F6;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 .header-explore__btn {
-  color: white;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 15px;
   width: 200px;
   border-radius: 25px;
   background: #9356DC;
+  color: white;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 
 .header-guide {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.header-guide__box {
+.header-guide-box {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   height: 25px;
   width: 300px;
   margin-bottom: 10px;
@@ -78,44 +79,44 @@ h1, h2, h3, h4, h5, h6, p, a {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
-.header-guide__box.light-purple {
+.header-guide-box.light-purple {
   background-color: #f2eafb;
 }
-.header-guide__box p {
+.header-guide-box p {
   font-weight: bold;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-.header-guide__box i {
+.header-guide-box i {
   color: gray;
   margin: 10px;
 }
-.header-guide__box i.purple {
+.header-guide-box i.purple {
   color: #9356DC;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-.header-guide__box span {
-  font-family: "Roboto", sans-serif;
+.header-guide-box__number {
   font-size: 0.9em;
+  position: absolute;
   color: white;
   background-color: #9356DC;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  margin-left: -30px;
+  margin-left: -325px;
 }
 
 #restaurants {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #F6F6F6;
 }
 #restaurants .restaurant-box {
@@ -154,8 +155,9 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-bottom: 10px;
 }
 #restaurants .restaurant-box .heart-btn i {
-  display: flex;
-  justify-content: right;
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 20px;
   font-size: 2em;
   color: white;
   text-shadow: 0px 0px 2px black;

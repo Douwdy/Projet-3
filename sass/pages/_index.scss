@@ -1,19 +1,15 @@
 .header-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     background: white;
     margin: 0px;
     padding: 10px ;
     padding-top: 15px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    @include box-shadow;
 }
 .header-location{
     background: $color-dark-gray;
-    display: flex;
+    @include flex-center;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     i{
         margin-right: 5px;
     }
@@ -21,34 +17,27 @@
 .header-explore{
     padding: 50px;
     background: $color-light-gray;
-    display: flex;
+    @include flex-center;
+    text-align: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     &__btn{
-        color: white;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include box-shadow;
+        @include flex-center;
         padding: 15px;
         width: 200px;
         border-radius: 25px;
         background: $color-primary;
+        color: white;
         background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
     }
 }
 
 .header-guide{
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__box{
-        display: flex;
+    &-box{
+        @include flex-center;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
 
         height: 25px;
         width: 300px;
@@ -56,54 +45,46 @@
         margin-bottom: 10px;
         padding: 15px;
 
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        @include box-shadow;
         border-radius: 15px;
         &.light-purple{
             background-color: lighten($color: $color-primary, $amount: 35);
         }
         p{
             font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
         }
         i{
             color: gray;
             margin: 10px;
             &.purple{
                 color: $color-primary;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center;
             }
         }
-        span{
-            font-family: 'Roboto', sans-serif;
+        &__number{
             font-size: 0.9em;
-
+            position: absolute;
+    
             color: white;
             background-color: $color-primary;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
+    
+            @include flex-center;
+    
             height: 25px;
             width: 25px;
             border-radius: 50%;
-            margin-left: -30px;
+            margin-left: -325px
         }
     }
 }
 
 #restaurants{
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: $color-light-gray;
     .restaurant-box{
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        @include box-shadow;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -112,9 +93,7 @@
         background-color: white;
         border-radius: 15px;
         &__new{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             position: absolute;
 
             background-color: $color-tertiary;
@@ -141,8 +120,9 @@
         }
         .heart-btn{
             i{
-                display: flex;
-                justify-content: right;
+                position: absolute;
+                margin-left: 140px;
+                margin-top: 20px;
                 font-size: 2em;
                 color: white;
                 text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
