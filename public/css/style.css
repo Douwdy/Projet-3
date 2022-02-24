@@ -60,14 +60,20 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: white;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
+.header-explore p {
+  font-size: 0.99em;
+}
 
-.header-guide {
+.header-guide__title {
+  margin-left: 15px;
+}
+.header-guide-column {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.header-guide-box {
+.header-guide-column-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,26 +85,26 @@ h1, h2, h3, h4, h5, h6, p, a {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
-.header-guide-box.light-purple {
+.header-guide-column-box.light-purple {
   background-color: #f2eafb;
 }
-.header-guide-box p {
+.header-guide-column-box p {
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-guide-box i {
+.header-guide-column-box i {
   color: gray;
   margin: 10px;
 }
-.header-guide-box i.purple {
+.header-guide-column-box i.purple {
   color: #9356DC;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-guide-box__number {
+.header-guide-column-box__number {
   font-size: 0.9em;
   position: absolute;
   color: white;
@@ -113,13 +119,19 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 #restaurants {
+  background-color: #F6F6F6;
+}
+#restaurants .restaurant-title {
+  padding-top: 50px;
+  margin-left: 15px;
+}
+#restaurants .restaurant-column {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #F6F6F6;
 }
-#restaurants .restaurant-box {
+#restaurants .restaurant-column .restaurant-box {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -129,7 +141,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   background-color: white;
   border-radius: 15px;
 }
-#restaurants .restaurant-box__new {
+#restaurants .restaurant-column .restaurant-box__new {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,35 +155,38 @@ h1, h2, h3, h4, h5, h6, p, a {
   border-radius: 3px;
   font-weight: 600;
 }
-#restaurants .restaurant-box-desc {
+#restaurants .restaurant-column .restaurant-box-desc {
   display: flex;
   flex-direction: row;
 }
-#restaurants .restaurant-box-desc__titles {
+#restaurants .restaurant-column .restaurant-box-desc__titles {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
-#restaurants .restaurant-box .heart-btn i {
+#restaurants .restaurant-column .restaurant-box .heart-btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  margin-left: 140px;
-  margin-top: 20px;
+  margin-left: 280px;
+  margin-top: -55px;
   font-size: 2em;
   color: white;
   text-shadow: 0px 0px 2px black;
 }
-#restaurants .restaurant-box .heart-btn i:hover {
+#restaurants .restaurant-column .restaurant-box .heart-btn i:hover {
   color: #9356DC;
 }
-#restaurants .restaurant-box p {
+#restaurants .restaurant-column .restaurant-box p {
   margin: 5px;
 }
-#restaurants .restaurant-box h4 {
+#restaurants .restaurant-column .restaurant-box h4 {
   margin: 5px;
 }
-#restaurants .restaurant-box img {
+#restaurants .restaurant-column .restaurant-box img {
   margin-left: 0px;
   margin-top: 0px;
   margin-right: 0px;
