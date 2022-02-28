@@ -1,0 +1,133 @@
+.menu{
+    @include flex-center__column;
+    &-selector{
+        @include flex-center__column;
+        background-color: $color-dark-gray;
+        width: 375px;
+        border-radius: 30px 30px 0px 0px;
+        margin-top: -30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        h2{
+            font-family: 'Shrikhand', cursive;
+        }
+
+        .menu__submit{
+            @include box-shadow;
+            @include flex-center;
+            padding: 15px;
+            margin: 50px;
+            width: 150px;
+            border-radius: 25px;
+            background: $color-primary;
+            color: white;
+            background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+            transition: transform 250ms;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+
+        .menu-selector-header{
+            @include flex-center;
+            .heart-btn{
+                i{
+                    @include flex-center;
+                    margin-left: 40px;
+                    font-size: 2em;
+                    color: white;
+                    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+                    transition: transform 250ms;
+                    &:hover{
+                        color: $color-primary;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+            
+        &-box{
+            @include box-shadow;
+            width: 350px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: white;
+            margin-bottom: 10px;
+            overflow: hidden;
+
+            &:hover + &__validator{
+                transform: translate(-60px);
+                transition-duration: 0.8s;
+                i{
+                    transform: rotate(360deg);
+                    transition-duration: 1s;
+                }
+            }
+
+            &__validator{
+                margin-top: -70px;
+                float: right;
+                margin-right: 60px;
+                font-size: 1.5em;
+                color: white;
+                @include flex-center;
+                width: 60px;
+                height: 60px;
+                background-color: $color-tertiary;
+                &:hover{
+                    transform: translate(-60px);
+                    transition-duration: 0.8s;
+                    i{
+                        transform: rotate(360deg);
+                        transition-duration: 1s;
+                    }
+                }
+            }
+            
+            &-text{
+                display: block;
+                margin-top: 15px;
+                margin-left: 5px;
+                &__title{
+                    font-size: 1em;
+                    margin: 0px;
+                }
+                text-overflow: ellipsis;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                line-height: 10px;
+                p{
+                    font-size: 0.8em;
+                }
+                &__price{
+                    margin-right: 20px;
+                    margin-top: -55px;
+                    float: right;
+                    font-size: 1em;
+                    font-weight: bold;
+                    
+                }
+            }
+        }
+        &-entree{
+            h4{
+                @include menu-title;
+            }
+        }
+        &-plat{
+            h4{
+                @include menu-title;
+            }
+        }
+        &-desserts{
+            h4{
+                @include menu-title;
+            }
+        }
+    }
+    img{
+        width:375px;
+        height: 260px;
+        object-fit: cover;
+    }
+}

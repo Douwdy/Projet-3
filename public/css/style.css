@@ -17,17 +17,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-family: "Roboto", sans-serif;
 }
 
-.header-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  margin: 0px;
-  padding: 10px;
-  padding-top: 15px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
 .header-location {
   background: #EAEAEA;
   display: flex;
@@ -45,8 +34,8 @@ h1, h2, h3, h4, h5, h6, p, a {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
+  text-align: center;
 }
 .header-explore__btn {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
@@ -201,6 +190,148 @@ h1, h2, h3, h4, h5, h6, p, a {
   object-fit: cover;
   border-radius: 13px 13px 0px 0px;
 }
+#restaurants .restaurant-column .restaurant-box a {
+  color: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EAEAEA;
+  width: 375px;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -30px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.menu-selector h2 {
+  font-family: "Shrikhand", cursive;
+}
+.menu-selector .menu__submit {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 50px;
+  width: 150px;
+  border-radius: 25px;
+  background: #9356DC;
+  color: white;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  transition: transform 250ms;
+}
+.menu-selector .menu__submit:hover {
+  transform: scale(1.05);
+}
+.menu-selector .menu-selector-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-selector .menu-selector-header .heart-btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  font-size: 2em;
+  color: white;
+  text-shadow: 0px 0px 2px black;
+  transition: transform 250ms;
+}
+.menu-selector .menu-selector-header .heart-btn i:hover {
+  color: #9356DC;
+  transform: scale(1.1);
+}
+.menu-selector-box {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.menu-selector-box:hover + .menu-selector-box__validator {
+  transform: translate(-60px);
+  transition-duration: 0.8s;
+}
+.menu-selector-box:hover + .menu-selector-box__validator i {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+.menu-selector-box__validator {
+  margin-top: -70px;
+  float: right;
+  margin-right: 60px;
+  font-size: 1.5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #99E2D0;
+}
+.menu-selector-box__validator:hover {
+  transform: translate(-60px);
+  transition-duration: 0.8s;
+}
+.menu-selector-box__validator:hover i {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+.menu-selector-box-text {
+  display: block;
+  margin-top: 15px;
+  margin-left: 5px;
+  text-overflow: ellipsis;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  line-height: 10px;
+}
+.menu-selector-box-text__title {
+  font-size: 1em;
+  margin: 0px;
+}
+.menu-selector-box-text p {
+  font-size: 0.8em;
+}
+.menu-selector-box-text__price {
+  margin-right: 20px;
+  margin-top: -55px;
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
+}
+.menu-selector-entree h4 {
+  margin-left: 10px;
+  width: 40px;
+  border-bottom: solid 3px #99E2D0;
+}
+.menu-selector-plat h4 {
+  margin-left: 10px;
+  width: 40px;
+  border-bottom: solid 3px #99E2D0;
+}
+.menu-selector-desserts h4 {
+  margin-left: 10px;
+  width: 40px;
+  border-bottom: solid 3px #99E2D0;
+}
+.menu img {
+  width: 375px;
+  height: 260px;
+  object-fit: cover;
+}
 
 footer {
   color: white;
@@ -229,6 +360,25 @@ footer a:visited {
 footer a i {
   margin-right: 10px;
   font-size: 0.8em;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin: 0px;
+  padding: 10px;
+  padding-top: 15px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back-arrow {
+  position: absolute;
+  font-size: 1.5em;
+  margin-left: 20px;
+  margin-top: 15px;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

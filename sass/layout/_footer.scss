@@ -1,0 +1,29 @@
+footer{
+    color: white;
+    background-color: rgb(58, 58, 58);
+    height: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    line-height: 30px;
+
+    h4{
+        font-family: 'Shrikhand', cursive;
+    }
+    a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        height: 30px;
+        &:visited{
+            color: white;
+        }
+        i{
+            margin-right: 10px;
+            font-size: 0.8em;
+        }
+    }
+}
