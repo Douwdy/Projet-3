@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes box-flowdown {
+  0% {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes check-box {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+@keyframes check-box__ico {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 html {
   scroll-behavior: smooth;
   background-color: white;
@@ -253,6 +279,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 .menu-selector-box {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  animation: 1s ease-out 0s 1 box-flowdown;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 350px;
   height: 60px;
   border-radius: 15px;
@@ -260,18 +290,9 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-bottom: 10px;
   overflow: hidden;
 }
-.menu-selector-box:hover + .menu-selector-box__validator {
-  transform: translate(-60px);
-  transition-duration: 0.8s;
-}
-.menu-selector-box:hover + .menu-selector-box__validator i {
-  transform: rotate(360deg);
-  transition-duration: 1s;
-}
 .menu-selector-box__validator {
-  margin-top: -70px;
-  float: right;
-  margin-right: 60px;
+  position: absolute;
+  margin-left: 350px;
   font-size: 1.5em;
   color: white;
   display: flex;
@@ -282,21 +303,15 @@ h1, h2, h3, h4, h5, h6, p, a {
   background-color: #99E2D0;
 }
 .menu-selector-box__validator:hover {
-  transform: translate(-60px);
-  transition-duration: 0.8s;
+  animation: 1s ease-in-out 0s 1 check-box;
 }
 .menu-selector-box__validator:hover i {
-  transform: rotate(360deg);
-  transition-duration: 1s;
+  animation: 1s ease-in-out 0s 1 check-box__ico;
 }
 .menu-selector-box-text {
-  display: block;
-  margin-top: 15px;
-  margin-left: 5px;
-  text-overflow: ellipsis;
-  padding-bottom: 10px;
+  padding-top: 10px;
   padding-left: 15px;
-  line-height: 10px;
+  text-overflow: ellipsis;
 }
 .menu-selector-box-text__title {
   font-size: 1em;
@@ -306,9 +321,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-size: 0.8em;
 }
 .menu-selector-box-text__price {
-  margin-right: 20px;
-  margin-top: -55px;
-  float: right;
   font-size: 1em;
   font-weight: bold;
 }
