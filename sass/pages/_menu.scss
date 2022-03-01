@@ -52,26 +52,45 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-between;
             width: 350px;
             height: 60px;
             border-radius: 15px;
             background-color: white;
             margin-bottom: 10px;
             overflow: hidden;
+            /* Ne fonctionne pas 🤷
+            &:hover + &__validator{
+                animation: check-box__out 1s 0s ease-in-out both;
+                i{
+                    animation: check-box-ico__out 0.8s 0s ease-in-out both;
+                }
+                &:hover{
+                    animation: check-box__in 1s 0s ease-in-out both;
+                    i{
+                        animation: check-box-ico__in 0.8s 0s ease-in-out both;
+                    }
+                }
+            }
+            */
         
             &__validator{
                 position: absolute;
-                margin-left: 350px;
+                margin-left: 290px;
                 font-size: 1.5em;
                 color: white;
                 @include flex-center;
                 width: 60px;
                 height: 60px;
                 background-color: $color-tertiary;
+                animation: check-box__out 1s 0s ease-in-out both;
+                i{
+                    animation: check-box-ico__out 0.8s 0s ease-in-out both;
+                }
                 &:hover{
-                    animation: 1s ease-in-out 0s 1 check-box;
+                    animation: check-box__in 1s 0s ease-in-out both;
                     i{
-                        animation: 1s ease-in-out 0s 1 check-box__ico;
+                        animation: check-box-ico__in 0.8s 0s ease-in-out both;
                     }
                 }
             }
@@ -88,6 +107,8 @@
                     font-size: 0.8em;
                 }
                 &__price{
+                    padding-right: 15px;
+                    padding-top: 30px;
                     font-size: 1em;
                     font-weight: bold;
                     

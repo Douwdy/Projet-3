@@ -10,9 +10,10 @@
     }
 }
 
-@keyframes check-box{
+// Check Box animation //
+@keyframes check-box__in{
     0%{
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 
     100%{
@@ -20,7 +21,17 @@
     }
 }
 
-@keyframes check-box__ico {
+@keyframes check-box__out{
+    0%{
+        transform: translateX(-60px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+// Check Box Icon animation //
+@keyframes check-box-ico__in {
 
     0%{
         transform: rotate(0deg);
@@ -28,5 +39,15 @@
     
     100%{
         transform: rotate(360deg);
+    }
+}
+@keyframes check-box-ico__out {
+
+    0%{
+        transform: rotate(360deg);
+    }
+    
+    100%{
+        transform: rotate(0deg);
     }
 }
