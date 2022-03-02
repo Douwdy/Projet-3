@@ -59,41 +59,30 @@
             background-color: white;
             margin-bottom: 10px;
             overflow: hidden;
-            /* Ne fonctionne pas 🤷
-            &:hover + &__validator{
-                animation: check-box__out 1s 0s ease-in-out both;
+            &:hover &__validator{
+                animation: check-box__in 1s 0s ease-out both;
                 i{
-                    animation: check-box-ico__out 0.8s 0s ease-in-out both;
-                }
-                &:hover{
-                    animation: check-box__in 1s 0s ease-in-out both;
-                    i{
-                        animation: check-box-ico__in 0.8s 0s ease-in-out both;
-                    }
+                    animation: check-box-ico__in 0.8s 0s ease-out both;
                 }
             }
-            */
-        
+
+            &:hover &-text__price{
+                animation: check-box__in 1s 0s ease-out both;
+                i{
+                    animation: check-box-ico__in 0.8s 0s ease-out both;
+                }
+            }
+
             &__validator{
-                position: absolute;
-                margin-left: 290px;
+                margin-right: -61px;
                 font-size: 1.5em;
                 color: white;
                 @include flex-center;
                 width: 60px;
                 height: 60px;
                 background-color: $color-tertiary;
-                animation: check-box__out 1s 0s ease-in-out both;
-                i{
-                    animation: check-box-ico__out 0.8s 0s ease-in-out both;
+                animation: check-box__out 1s 0s ease-out both;
                 }
-                &:hover{
-                    animation: check-box__in 1s 0s ease-in-out both;
-                    i{
-                        animation: check-box-ico__in 0.8s 0s ease-in-out both;
-                    }
-                }
-            }
             
             &-text{
                 padding-top: 10px;
@@ -107,11 +96,13 @@
                     font-size: 0.8em;
                 }
                 &__price{
+                    position: absolute;
+                    margin-left: 310px;
                     padding-right: 15px;
                     padding-top: 30px;
                     font-size: 1em;
                     font-weight: bold;
-                    
+                    animation: check-box__out 1s 0s ease-out both;
                 }
             }
         }
