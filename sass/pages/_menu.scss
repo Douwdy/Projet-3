@@ -1,5 +1,10 @@
 .menu{
     @include flex-center__column;
+    img{
+        width: 375px;
+        height: 260px;
+        object-fit: cover;
+    }
     &-selector{
         @include flex-center__column;
         background-color: $color-dark-gray;
@@ -66,13 +71,6 @@
                 }
             }
 
-            &:hover &-text__price{
-                animation: check-box__in 1s 0s ease-out both;
-                i{
-                    animation: check-box-ico__in 0.8s 0s ease-out both;
-                }
-            }
-
             &__validator{
                 margin-right: -61px;
                 font-size: 1.5em;
@@ -105,7 +103,15 @@
                     animation: check-box__out 1s 0s ease-out both;
                 }
             }
+            
+            &:hover &-text__price{
+                animation: check-box__in 1s 0s ease-out both;
+                i{
+                    animation: check-box-ico__in 0.8s 0s ease-out both;
+                }
+            }
         }
+
         &-entree{
             h4{
                 @include menu-title;
@@ -121,10 +127,5 @@
                 @include menu-title;
             }
         }
-    }
-    img{
-        width:375px;
-        height: 260px;
-        object-fit: cover;
     }
 }

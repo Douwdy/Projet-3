@@ -42,6 +42,14 @@
     transform: rotate(0deg);
   }
 }
+@keyframes spiner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 html {
   scroll-behavior: smooth;
   background-color: white;
@@ -242,6 +250,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   align-items: center;
   flex-direction: column;
 }
+.menu img {
+  width: 375px;
+  height: 260px;
+  object-fit: cover;
+}
 .menu-selector {
   display: flex;
   justify-content: center;
@@ -313,12 +326,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 .menu-selector-box:hover .menu-selector-box__validator i {
   animation: check-box-ico__in 0.8s 0s ease-out both;
 }
-.menu-selector-box:hover .menu-selector-box-text__price {
-  animation: check-box__in 1s 0s ease-out both;
-}
-.menu-selector-box:hover .menu-selector-box-text__price i {
-  animation: check-box-ico__in 0.8s 0s ease-out both;
-}
 .menu-selector-box__validator {
   margin-right: -61px;
   font-size: 1.5em;
@@ -352,6 +359,12 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-weight: bold;
   animation: check-box__out 1s 0s ease-out both;
 }
+.menu-selector-box:hover .menu-selector-box-text__price {
+  animation: check-box__in 1s 0s ease-out both;
+}
+.menu-selector-box:hover .menu-selector-box-text__price i {
+  animation: check-box-ico__in 0.8s 0s ease-out both;
+}
 .menu-selector-entree h4 {
   margin-left: 10px;
   width: 40px;
@@ -366,11 +379,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-left: 10px;
   width: 40px;
   border-bottom: solid 3px #99E2D0;
-}
-.menu img {
-  width: 375px;
-  height: 260px;
-  object-fit: cover;
 }
 
 footer {
@@ -421,14 +429,6 @@ footer a i {
   color: black;
 }
 
-@keyframes spiner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .loader {
   display: flex;
   justify-content: center;
