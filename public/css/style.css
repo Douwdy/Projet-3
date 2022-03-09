@@ -50,6 +50,24 @@
     transform: rotate(360deg);
   }
 }
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 html {
   scroll-behavior: smooth;
   background-color: white;
@@ -147,9 +165,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   justify-content: center;
   align-items: center;
 }
-.header-guide-column-box__number {
+.header-guide-column-box-number {
   font-size: 0.9em;
   position: absolute;
+  animation: fade 1.5s ease;
   color: white;
   background-color: #9356DC;
   display: flex;
@@ -189,6 +208,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   justify-content: center;
   align-items: center;
   position: absolute;
+  animation: fade 1.5s ease;
   background-color: #99E2D0;
   color: #1b6150;
   margin-top: 8px;
@@ -209,6 +229,9 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+#restaurants .restaurant-column .restaurant-box .heart-btn {
+  animation: fade 1.5s ease;
+}
 #restaurants .restaurant-column .restaurant-box .heart-btn i {
   display: flex;
   justify-content: center;
@@ -222,8 +245,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   transition: transform 250ms;
 }
 #restaurants .restaurant-column .restaurant-box .heart-btn i:hover {
-  color: #9356DC;
-  transform: scale(1.1);
+  color: transparent;
+  text-shadow: none;
+  animation: heart 250ms ease;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
 }
 #restaurants .restaurant-column .restaurant-box p {
   margin: 5px;
@@ -303,8 +329,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   transition: transform 250ms;
 }
 .menu-selector .menu-selector-header .heart-btn i:hover {
-  color: #9356DC;
-  transform: scale(1.1);
+  color: transparent;
+  text-shadow: none;
+  animation: heart 250ms ease;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
 }
 .menu-selector-box {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
@@ -427,6 +456,7 @@ footer a i {
   margin-left: 20px;
   margin-top: 15px;
   color: black;
+  animation: fade 1.5s ease;
 }
 
 .loader {

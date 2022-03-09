@@ -63,9 +63,10 @@
                     @include flex-center;
                 }
             }
-            &__number{
+            &-number{
                 font-size: 0.9em;
                 position: absolute;
+                animation: fade 1.5s ease;
         
                 color: white;
                 background-color: $color-primary;
@@ -101,6 +102,7 @@
             &__new{
                 @include flex-center;
                 position: absolute;
+                animation: fade 1.5s ease;
 
                 background-color: $color-tertiary;
                 color: darken($color-tertiary, 50);
@@ -125,6 +127,7 @@
                 }
             }
             .heart-btn{
+                animation: fade 1.5s ease;
                 i{
                     @include flex-center;
                     position: absolute;
@@ -135,8 +138,11 @@
                     text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
                     transition: transform 250ms;
                     &:hover{
-                        color: $color-primary;
-                        transform: scale(1.1);
+                        color: transparent;
+                        text-shadow: none;
+                        animation: heart 250ms ease;
+                        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+                        background-clip: text;
                     }
                 }
             }

@@ -44,8 +44,11 @@
                     text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
                     transition: transform 250ms;
                     &:hover{
-                        color: $color-primary;
-                        transform: scale(1.1);
+                        color: transparent;
+                        text-shadow: none;
+                        animation: heart 250ms ease;
+                        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+                        background-clip: text;
                     }
                 }
             }
