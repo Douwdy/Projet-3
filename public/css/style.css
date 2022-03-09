@@ -270,6 +270,26 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: black;
 }
 
+.box-animate-1 {
+  animation: 1s ease-out 0ms 1 box-flowdown;
+  opacity: 1;
+}
+
+.box-animate-2 {
+  animation: 1s ease-out 100ms 1 box-flowdown;
+  opacity: 1;
+}
+
+.box-animate-3 {
+  animation: 1s ease-out 200ms 1 box-flowdown;
+  opacity: 1;
+}
+
+.box-animate-4 {
+  animation: 1s ease-out 300ms 1 box-flowdown;
+  opacity: 1;
+}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -337,7 +357,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 .menu-selector-box {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-  animation: 1s ease-out 0s 1 box-flowdown;
   display: flex;
   flex-direction: row;
   align-items: center;
