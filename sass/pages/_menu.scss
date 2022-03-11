@@ -1,18 +1,18 @@
 
 .box-animate-1{
-    animation: 1s ease-out 0ms 1 box-flowdown;
+    animation: 1s ease-out both 50ms 1 box-flowdown;
 }
 
 .box-animate-2{
-    animation: 1s ease-out 100ms 1 box-flowdown;
+    animation: 1s ease-out both 150ms 1 box-flowdown;
 }
 
 .box-animate-3{
-    animation: 1s ease-out 200ms 1 box-flowdown;
+    animation: 1s ease-out both 250ms 1 box-flowdown;
 }
 
 .box-animate-4{
-    animation: 1s ease-out 300ms 1 box-flowdown;
+    animation: 1s ease-out both 350ms 1 box-flowdown;
 }
 
 .menu{
@@ -99,6 +99,9 @@
                 height: 60px;
                 background-color: $color-tertiary;
                 animation: check-box__out 1s 0s ease-out both;
+                    i{
+                        animation: check-box-ico__out 0.8s 0s ease-out both;
+                    }
                 }
             
             &-text{

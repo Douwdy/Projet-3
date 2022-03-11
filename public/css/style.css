@@ -271,19 +271,19 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .box-animate-1 {
-  animation: 1s ease-out 0ms 1 box-flowdown;
+  animation: 1s ease-out both 50ms 1 box-flowdown;
 }
 
 .box-animate-2 {
-  animation: 1s ease-out 100ms 1 box-flowdown;
+  animation: 1s ease-out both 150ms 1 box-flowdown;
 }
 
 .box-animate-3 {
-  animation: 1s ease-out 200ms 1 box-flowdown;
+  animation: 1s ease-out both 250ms 1 box-flowdown;
 }
 
 .box-animate-4 {
-  animation: 1s ease-out 300ms 1 box-flowdown;
+  animation: 1s ease-out both 350ms 1 box-flowdown;
 }
 
 .menu {
@@ -381,6 +381,9 @@ h1, h2, h3, h4, h5, h6, p, a {
   height: 60px;
   background-color: #99E2D0;
   animation: check-box__out 1s 0s ease-out both;
+}
+.menu-selector-box__validator i {
+  animation: check-box-ico__out 0.8s 0s ease-out both;
 }
 .menu-selector-box-text {
   padding-top: 10px;
