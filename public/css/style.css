@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 #restaurants .restaurant-column .restaurant-box .heart-btn i:hover {
   color: transparent;
   text-shadow: none;
-  animation: heart 250ms ease;
+  animation: heart 250ms ease forwards normal;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   background-clip: text;
 }

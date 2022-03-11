@@ -140,7 +140,7 @@
                     &:hover{
                         color: transparent;
                         text-shadow: none;
-                        animation: heart 250ms ease;
+                        animation: heart 250ms ease forwards normal;
                         background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
                         background-clip: text;
                     }
