@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   flex-direction: row;
 }
 .header-location i {
-  margin-right: 5px;
+  margin-right: 1%;
 }
 
 .header-explore {
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .header-guide__title {
-  margin-left: 15px;
+  margin-left: 3%;
 }
 .header-guide-column {
   display: flex;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 .header-guide-column-box i {
   color: gray;
-  margin: 10px;
+  margin: 2%;
 }
 .header-guide-column-box i.purple {
   color: #9356DC;
@@ -182,16 +182,24 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 #restaurants {
   background-color: #F6F6F6;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+@media screen and (max-width: 650px) {
+  #restaurants {
+    padding-bottom: 10%;
+    padding-top: 5%;
+  }
 }
 #restaurants .restaurant-title {
-  padding-top: 50px;
-  margin-left: 15px;
+  margin-left: 3%;
 }
 #restaurants .restaurant-column {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #restaurants .restaurant-column .restaurant-box {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);

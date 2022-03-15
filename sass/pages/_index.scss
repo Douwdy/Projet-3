@@ -3,7 +3,7 @@
     @include flex-center;
     flex-direction: row;
     i{
-        margin-right: 5px;
+        margin-right: 1%;
     }
 }
 .header-explore{
@@ -31,7 +31,7 @@
 }
 .header-guide{
     &__title{
-        margin-left: 15px;
+        margin-left: 3%;
     }
     &-column{
         @include flex-center__column;
@@ -57,7 +57,7 @@
             }
             i{
                 color: gray;
-                margin: 10px;
+                margin: 2%;
                 &.purple{
                     color: $color-primary;
                     @include flex-center;
@@ -84,12 +84,21 @@
 
 #restaurants{
     background-color: $color-light-gray;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    @media screen and (max-width: 650px){
+        padding-bottom: 10%;
+        padding-top: 5%;
+    }
     .restaurant-title{
-        padding-top: 50px;
-        margin-left: 15px;
+        margin-left: 3%;
     }
     .restaurant-column{
-    @include flex-center__column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
         .restaurant-box{
             @include box-shadow;
             display: flex;
