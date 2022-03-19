@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(/public/images/background/background.svg);
+  background-image: url(public/images/background/background.svg);
 }
 .menu img {
   width: 375px;
