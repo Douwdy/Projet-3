@@ -1,0 +1,104 @@
+@keyframes box-flowdown{
+    0%{
+        transform: translateY(25%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+// Check Box animation //
+@keyframes check-box__in{
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(-60px);
+    }
+}
+
+@keyframes check-box__out{
+    0%{
+        transform: translateX(-60px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+// Check Box Icon animation //
+@keyframes check-box-ico__in {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes check-box-ico__out {
+
+    0%{
+        transform: rotate(360deg);
+    }
+    
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+// Spiner //
+
+@keyframes spiner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spiner-fade {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    } 
+}
+
+// Micellaneous //
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes heart {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1.1);
+        text-shadow: none;
+        color: transparent;
+        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+        background-clip: text;
+    }
+}

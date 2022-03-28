@@ -1,0 +1,17 @@
+.header-logo{
+    @include flex-center;
+    background: white;
+    margin: 0px;
+    padding: 10px ;
+    padding-top: 15px;
+    @include box-shadow;
+}
+
+.back-arrow{
+    position: absolute;
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: black;
+    animation: fade 1.5s ease;
+}

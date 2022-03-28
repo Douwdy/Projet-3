@@ -1,0 +1,180 @@
+.header-location{
+    background: $color-dark-gray;
+    @include flex-center;
+    flex-direction: row;
+    i{
+        margin-right: 1%;
+    }
+}
+.header-explore{
+    padding: 50px;
+    background: $color-light-gray;
+    @include flex-center__column;
+    text-align: center;
+    &__btn{
+        @include box-shadow;
+        @include flex-center;
+        padding: 15px;
+        width: 200px;
+        border-radius: 25px;
+        background: $color-primary;
+        color: white;
+        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+        transition: transform 250ms;
+        &:hover{
+            @include box-shadow-darken;
+            transform: scale(1.05);
+            background: linear-gradient(0deg, lighten($color-primary, 3) 0%, lighten($color-secondary, 3) 100%);
+        }
+    }
+    p{
+        font-size: 0.99em
+    }
+    h1{
+        font-size: 1.5em;
+    }
+}
+.header-guide{
+    &__title{
+        margin-left: 3%;
+    }
+    &-column{
+        @include flex-center__column;
+        &-box{
+            @include flex-center;
+            flex-direction: row;
+
+            height: 25px;
+            width: 300px;
+
+            margin-bottom: 10px;
+            padding: 15px;
+
+            @include box-shadow;
+            border-radius: 15px;
+            &.light-purple{
+                background-color: lighten($color: $color-primary, $amount: 35);
+            }
+            p{
+                font-weight: bold;
+                @include flex-center;
+
+            }
+            i{
+                color: gray;
+                margin: 2%;
+                &.purple{
+                    color: $color-primary;
+                    @include flex-center;
+                }
+            }
+            &-number{
+                font-size: 0.9em;
+                position: absolute;
+                animation: fade 1.5s ease;
+        
+                color: white;
+                background-color: $color-primary;
+        
+                @include flex-center;
+        
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                margin-left: -325px
+            }
+        }
+    }
+}
+
+#restaurants{
+    background-color: $color-light-gray;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    @media screen and (max-width: 650px){
+        padding-bottom: 10%;
+        padding-top: 5%;
+    }
+    .restaurant-title{
+        margin-left: 3%;
+    }
+    .restaurant-column{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .restaurant-box{
+            @include box-shadow;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: auto;
+            margin: 10px;
+            background-color: white;
+            border-radius: 15px;
+            &__new{
+                @include flex-center;
+                position: absolute;
+                animation: fade 1.5s ease;
+
+                background-color: $color-tertiary;
+                color: darken($color-tertiary, 50);
+
+                margin-top: 8px;
+                margin-left: 235px;
+
+                height: 30px;
+                width: 90px;
+                border-radius: 3px;
+                font-weight: 600;         
+            }
+            &-desc{
+                display: flex;
+                flex-direction: row;
+                &__titles{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            .heart-btn{
+                animation: fade 1.5s ease;
+                i{
+                    @include flex-center;
+                    position: absolute;
+                    margin-left: 280px;
+                    margin-top: -55px;
+                    font-size: 2em;
+                    color: white;
+                    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+                    transition: transform 250ms;
+                    &:hover{
+                        animation: heart 250ms ease forwards normal;
+                    }
+                }
+            }
+            p{
+                margin: 5px;
+            }
+            h4{
+                margin: 5px;
+            }
+            img{
+                margin-left: 0px;
+                margin-top: 0px;
+                margin-right: 0px;
+
+                height: 170px;
+                width: 335px;
+                object-fit: cover;
+                border-radius: 13px 13px 0px 0px;
+            }
+            a{
+                color: black;
+            }
+        }
+    }
+}

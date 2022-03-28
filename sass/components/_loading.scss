@@ -1,0 +1,15 @@
+.loader{
+    animation: spiner-fade 1.2s ease-in-out both;
+    @include flex-center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    .spiner{
+        font-size: 8em;
+        color: #E6CEA0;
+        animation: spiner 1.2s ease-in-out infinite;
+    }
+}

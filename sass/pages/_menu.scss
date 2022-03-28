@@ -1,0 +1,151 @@
+
+.box-animate-1{
+    animation: 1s ease-out both 50ms 1 box-flowdown;
+}
+
+.box-animate-2{
+    animation: 1s ease-out both 150ms 1 box-flowdown;
+}
+
+.box-animate-3{
+    animation: 1s ease-out both 250ms 1 box-flowdown;
+}
+
+.box-animate-4{
+    animation: 1s ease-out both 350ms 1 box-flowdown;
+}
+
+.menu{
+    @include flex-center__column;
+    background-image: url(/public/images/background/background.svg);
+    img{
+        width: 375px;
+        height: 260px;
+        object-fit: cover;
+    }
+    &-selector{
+        @include flex-center__column;
+        background-color: $color-dark-gray;
+        width: 375px;
+        border-radius: 30px 30px 0px 0px;
+        margin-top: -30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        h2{
+            font-family: 'Shrikhand', cursive;
+        }
+
+        .menu__submit{
+            @include box-shadow;
+            @include flex-center;
+            padding: 15px;
+            margin: 50px;
+            width: 150px;
+            border-radius: 25px;
+            background: $color-primary;
+            color: white;
+            background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+            transition: transform 250ms;
+                &:hover{
+                    @include box-shadow-darken;
+                    transform: scale(1.05);
+                    background: linear-gradient(0deg, lighten($color-primary, 3) 0%, lighten($color-secondary, 3) 100%);
+                }
+            }
+
+        .menu-selector-header{
+            @include flex-center;
+            .heart-btn-menu{
+                i{
+                    @include flex-center;
+                    margin-left: 40px;
+                    font-size: 2em;
+                    color: $color-dark-gray;
+                    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+                    &:hover{
+                        animation: heart 250ms ease forwards normal;
+                    }
+                }
+            }
+        }
+            
+        &-box{
+            @include box-shadow;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 350px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: white;
+            margin-bottom: 10px;
+            overflow: hidden;
+            &:hover &__validator{
+                animation: check-box__in 1s 0s ease-out both;
+                i{
+                    animation: check-box-ico__in 0.8s 0s ease-out both;
+                }
+            }
+
+            &__validator{
+                margin-right: -61px;
+                font-size: 1.5em;
+                color: white;
+                @include flex-center;
+                width: 60px;
+                height: 60px;
+                background-color: $color-tertiary;
+                animation: check-box__out 1s 0s ease-out both;
+                    i{
+                        animation: check-box-ico__out 0.8s 0s ease-out both;
+                    }
+                }
+            
+            &-text{
+                padding-top: 10px;
+                padding-left: 15px;
+                text-overflow: ellipsis;
+                &__title{
+                    font-size: 1em;
+                    margin: 0px;
+                }
+                p{
+                    font-size: 0.77em;
+                }
+                &__price{
+                    position: absolute;
+                    margin-left: 310px;
+                    padding-right: 15px;
+                    padding-top: 30px;
+                    font-size: 1em;
+                    font-weight: bold;
+                    animation: check-box__out 1s 0s ease-out both;
+                }
+            }
+            
+            &:hover &-text__price{
+                animation: check-box__in 1s 0s ease-out both;
+                i{
+                    animation: check-box-ico__in 0.8s 0s ease-out both;
+                }
+            }
+        }
+
+        &-entree{
+            h4{
+                @include menu-title;
+            }
+        }
+        &-plat{
+            h4{
+                @include menu-title;
+            }
+        }
+        &-desserts{
+            h4{
+                @include menu-title;
+            }
+        }
+    }
+}
