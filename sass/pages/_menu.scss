@@ -47,26 +47,23 @@
             background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
             transition: transform 250ms;
                 &:hover{
+                    @include box-shadow-darken;
                     transform: scale(1.05);
+                    background: linear-gradient(0deg, lighten($color-primary, 3) 0%, lighten($color-secondary, 3) 100%);
                 }
             }
 
         .menu-selector-header{
             @include flex-center;
-            .heart-btn{
+            .heart-btn-menu{
                 i{
                     @include flex-center;
                     margin-left: 40px;
                     font-size: 2em;
-                    color: white;
+                    color: $color-dark-gray;
                     text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
-                    transition: transform 250ms;
                     &:hover{
-                        color: transparent;
-                        text-shadow: none;
                         animation: heart 250ms ease forwards normal;
-                        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
-                        background-clip: text;
                     }
                 }
             }

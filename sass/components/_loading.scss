@@ -1,4 +1,5 @@
 .loader{
+    animation: spiner-fade 1.2s ease-in-out both;
     @include flex-center;
     position: fixed;
     top: 0;
@@ -6,14 +7,9 @@
     width: 100vw;
     height: 100vh;
     background-color: white;
-    transition: opacity 1.5s, visibility 1.5s;
     .spiner{
         font-size: 8em;
         color: #E6CEA0;
         animation: spiner 1.2s ease-in-out infinite;
-    }
-    &__hidden{
-        opacity: 0;
-        visibility: hidden;
     }
 }
