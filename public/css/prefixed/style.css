@@ -174,7 +174,7 @@
             transform: scale(1.1);
     text-shadow: none;
     color: transparent;
-    background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+    background: -webkit-linear-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
     background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
     -webkit-background-clip: text;
             background-clip: text;
@@ -192,7 +192,7 @@
             transform: scale(1.1);
     text-shadow: none;
     color: transparent;
-    background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+    background: -webkit-linear-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
     background: -o-linear-gradient(bottom, #9356DC 0%, #FF79DA 100%);
     background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
     -webkit-background-clip: text;
