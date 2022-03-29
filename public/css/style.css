@@ -10,22 +10,6 @@
     opacity: 1;
   }
 }
-@keyframes check-box__in {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(-60px);
-  }
-}
-@keyframes check-box__out {
-  from {
-    transform: translateX(-60px);
-  }
-  to {
-    transform: translateX(0px);
-  }
-}
 @keyframes check-box-ico__in {
   0% {
     transform: rotate(0deg);
@@ -387,7 +371,8 @@ h1, h2, h3, h4, h5, h6, p, a {
   overflow: hidden;
 }
 .menu-selector-box:hover .menu-selector-box__validator {
-  animation: check-box__in 1s 0s ease-out forwards;
+  transition: transform 1s ease-out;
+  transform: translateX(-60px);
 }
 .menu-selector-box:hover .menu-selector-box__validator i {
   animation: check-box-ico__in 0.8s 0s ease-out forwards;
@@ -403,7 +388,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   height: 60px;
   background-color: #99E2D0;
   animation-play-state: paused;
-  animation: check-box__out 1s 0s ease-out forwards;
+  transition: transform 1s ease-out;
 }
 .menu-selector-box__validator i {
   animation: check-box-ico__out 0.8s 0s ease-out forwards;
@@ -411,14 +396,24 @@ h1, h2, h3, h4, h5, h6, p, a {
 .menu-selector-box-text {
   padding-top: 10px;
   padding-left: 15px;
-  text-overflow: ellipsis;
+  width: 290px;
+}
+.menu-selector-box-text:hover {
+  transition: width 1s ease-out;
+  width: 225px;
 }
 .menu-selector-box-text__title {
   font-size: 1em;
   margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-selector-box-text p {
   font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-selector-box-text__price {
   position: absolute;
@@ -427,10 +422,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   padding-top: 30px;
   font-size: 1em;
   font-weight: bold;
-  animation: check-box__out 1s 0s ease-out both;
+  transition: transform 1s ease-out;
 }
 .menu-selector-box:hover .menu-selector-box-text__price {
-  animation: check-box__in 1s 0s ease-out both;
+  transition: transform 1s ease-out;
+  transform: translateX(-60px);
 }
 .menu-selector-box:hover .menu-selector-box-text__price i {
   animation: check-box-ico__in 0.8s 0s ease-out both;

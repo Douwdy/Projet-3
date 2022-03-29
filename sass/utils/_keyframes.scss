@@ -10,26 +10,6 @@
     }
 }
 
-// Check Box animation //
-@keyframes check-box__in{
-    from{
-        transform: translateX(0px);
-    }
-
-    to{
-        transform: translateX(-60px);
-    }
-}
-
-@keyframes check-box__out{
-    from{
-        transform: translateX(-60px);
-    }
-
-    to{
-        transform: translateX(0px);
-    }
-}
 // Check Box Icon animation //
 @keyframes check-box-ico__in {
 

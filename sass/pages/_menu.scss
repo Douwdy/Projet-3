@@ -82,7 +82,8 @@
             margin-bottom: 10px;
             overflow: hidden;
             &:hover &__validator{
-                animation: check-box__in 1s 0s ease-out forwards;
+                transition: transform 1s ease-out;
+                transform: translateX(-60px);
                 i{
                     animation: check-box-ico__in 0.8s 0s ease-out forwards;
                 }
@@ -97,7 +98,7 @@
                 height: 60px;
                 background-color: $color-tertiary;
                 animation-play-state: paused;
-                animation: check-box__out 1s 0s ease-out forwards;
+                transition: transform 1s ease-out;
                     i{
                         animation: check-box-ico__out 0.8s 0s ease-out forwards;
                     }
@@ -106,13 +107,19 @@
             &-text{
                 padding-top: 10px;
                 padding-left: 15px;
-                text-overflow: ellipsis;
+                width: 290px;
+                &:hover{
+                    transition: width 1s ease-out;
+                    width: 225px;
+                }
                 &__title{
                     font-size: 1em;
                     margin: 0px;
+                    @include text-overflow;
                 }
                 p{
                     font-size: 0.8em;
+                    @include text-overflow;
                 }
                 &__price{
                     position: absolute;
@@ -121,12 +128,13 @@
                     padding-top: 30px;
                     font-size: 1em;
                     font-weight: bold;
-                    animation: check-box__out 1s 0s ease-out both;
+                    transition: transform 1s ease-out;
                 }
             }
             
             &:hover &-text__price{
-                animation: check-box__in 1s 0s ease-out both;
+                transition: transform 1s ease-out;
+                transform: translateX(-60px);
                 i{
                     animation: check-box-ico__in 0.8s 0s ease-out both;
                 }

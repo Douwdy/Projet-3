@@ -24,3 +24,9 @@
     width: 40px;
     border-bottom: solid 3px $color-tertiary;
 }
+
+@mixin text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
