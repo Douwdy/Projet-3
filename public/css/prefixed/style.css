@@ -697,7 +697,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   -webkit-transition: width 1s ease-out;
   -o-transition: width 1s ease-out;
   transition: width 1s ease-out;
-  width: 225px;
+  width: 235px;
 }
 .menu-selector-box-text__title {
   font-size: 1em;
