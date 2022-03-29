@@ -11,18 +11,18 @@
   }
 }
 @keyframes check-box__in {
-  0% {
+  from {
     transform: translateX(0px);
   }
-  100% {
+  to {
     transform: translateX(-60px);
   }
 }
 @keyframes check-box__out {
-  0% {
+  from {
     transform: translateX(-60px);
   }
-  100% {
+  to {
     transform: translateX(0px);
   }
 }
@@ -387,10 +387,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   overflow: hidden;
 }
 .menu-selector-box:hover .menu-selector-box__validator {
-  animation: check-box__in 1s 0s ease-out both;
+  animation: check-box__in 1s 0s ease-out forwards;
 }
 .menu-selector-box:hover .menu-selector-box__validator i {
-  animation: check-box-ico__in 0.8s 0s ease-out both;
+  animation: check-box-ico__in 0.8s 0s ease-out forwards;
 }
 .menu-selector-box__validator {
   margin-right: -61px;
@@ -402,10 +402,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   width: 60px;
   height: 60px;
   background-color: #99E2D0;
-  animation: check-box__out 1s 0s ease-out both;
+  animation-play-state: paused;
+  animation: check-box__out 1s 0s ease-out forwards;
 }
 .menu-selector-box__validator i {
-  animation: check-box-ico__out 0.8s 0s ease-out both;
+  animation: check-box-ico__out 0.8s 0s ease-out forwards;
 }
 .menu-selector-box-text {
   padding-top: 10px;

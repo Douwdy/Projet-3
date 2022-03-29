@@ -82,9 +82,9 @@
             margin-bottom: 10px;
             overflow: hidden;
             &:hover &__validator{
-                animation: check-box__in 1s 0s ease-out both;
+                animation: check-box__in 1s 0s ease-out forwards;
                 i{
-                    animation: check-box-ico__in 0.8s 0s ease-out both;
+                    animation: check-box-ico__in 0.8s 0s ease-out forwards;
                 }
             }
 
@@ -96,9 +96,10 @@
                 width: 60px;
                 height: 60px;
                 background-color: $color-tertiary;
-                animation: check-box__out 1s 0s ease-out both;
+                animation-play-state: paused;
+                animation: check-box__out 1s 0s ease-out forwards;
                     i{
-                        animation: check-box-ico__out 0.8s 0s ease-out both;
+                        animation: check-box-ico__out 0.8s 0s ease-out forwards;
                     }
                 }
             

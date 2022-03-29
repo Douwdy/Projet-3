@@ -12,21 +12,21 @@
 
 // Check Box animation //
 @keyframes check-box__in{
-    0%{
+    from{
         transform: translateX(0px);
     }
 
-    100%{
+    to{
         transform: translateX(-60px);
     }
 }
 
 @keyframes check-box__out{
-    0%{
+    from{
         transform: translateX(-60px);
     }
 
-    100%{
+    to{
         transform: translateX(0px);
     }
 }
